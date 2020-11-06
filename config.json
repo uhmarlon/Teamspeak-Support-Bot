@@ -1,0 +1,9 @@
+{
+    "host": "localhost",
+    "port": 10011,
+    "serverPort": 9987,
+    "user": "serveradmin",
+    "pass": "pw",
+    "nick": "Support System",
+	"supportchannelid": "1000"
+}

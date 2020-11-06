@@ -1,0 +1,14 @@
+{
+    "name": "MarlonSupportBot",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index"
+    },
+    "author": "UhMarlon",
+    "license": "MIT",
+    "dependencies": {
+        "ts3-nodejs-library": "^2.4.1"
+    }
+}
