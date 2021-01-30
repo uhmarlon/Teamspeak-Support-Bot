@@ -42,6 +42,7 @@ TeamSpeak.connect({
                if (event.channel.cid == config.supportchannelid) {
                     if (event.client.nickname.length > 28) {
                          teamspeak.clientKick(event.client.clid, 4, "Your name is too long. No support channel could be created.");
+                         teamspeak.clientPoke(event.client.clid, "Your name is too long. No support channel could be created.")
                          return
                     };
                     var createdChannel = await teamspeak.channelCreate("➜ Support • " + event.client.nickname, {
