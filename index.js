@@ -52,6 +52,12 @@ TeamSpeak.connect({
                          channel_flag_maxclients_unlimited: 0,
                          channel_codec_quality: 10
                     });
+                    const clients = await teamspeak.clientList()
+                    clients.forEach(client => {
+                      if (client.servergroups.includes(parseInt(config.supnotifygroup))) {
+                        teamspeak.clientPoke(client.clid, event.client.nickname + " is waiting for you in the support channel")
+                      }
+                    });
                     teamspeak.clientMove(event.client.clid, createdChannel.cid);
                     teamspeak.clientMove(clientid, startchannel);
                }
