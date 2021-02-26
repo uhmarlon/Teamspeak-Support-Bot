@@ -37,7 +37,8 @@ npm install
     "user": "serveradmin",
     "pass": "pw",
     "nick": "Support System",
-    "supportchannelid": "1000"
+    "supportchannelid": "1000",
+    "supnotifygroup": "2000"
 }
 ```
 ### Step 4
