@@ -30,6 +30,7 @@ TeamSpeak.connect({
           await teamspeak.reconnect(-1, 1000)
           console.log("reconnected!")
      });
+     teamspeak.on('error', (error) => console.log(error));
      Promise.all([
           teamspeak.registerEvent("server"),
           teamspeak.registerEvent("channel", 0),
