@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"module": "CommonJS",
+		"target": "esnext",
+		"outDir": "dist",
+		"moduleResolution": "node",
+		"lib": [
+			"ESNext",
+			"ESNext.Array",
+			"ESNext.AsyncIterable",
+			"ESNext.Intl",
+			"ESNext.Symbol",
+			"DOM"
+		],
+		"resolveJsonModule": true,
+    "esModuleInterop": false,
+    "skipLibCheck": true,
+    "sourceMap": true,
+		"strict": false,
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
