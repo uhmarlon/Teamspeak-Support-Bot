@@ -23,22 +23,18 @@ export const teamspeak = new TeamSpeak({
 app.listen(PORT, () => {});
 
 teamspeak.on("ready", async () => {
-  console.log("TeamSpeak³ Bot Online");
-});
+  console.log("⚡️TeamSpeak³ Bot Online");
+}).on('error', (err: any) => console.error(err));
 
 teamspeak.whoami().then(whoami => {
   clientid = whoami.clientId;
   startchannel = whoami.clientChannelId;
 });
 
-teamspeak.on("error", (error) => {
-  console.log(error)
-});
-
 teamspeak.on("close", async () => {
-  console.log("disconnected, trying to reconnect...")
+  console.log("⚠️disconnected, trying to reconnect...")
   await teamspeak.reconnect(-1, 1000);
-  console.log("reconnected!")
+  console.log("🕯️reconnected!")
 });
 
 async function usercounter() : Promise<any> {
