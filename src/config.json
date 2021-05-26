@@ -18,7 +18,7 @@
      "supportchannelid": "33",
      "supnotifygroup": "48",
      "channelname": "➜ Support • %username%",
-     "channeldescription": "[center][COLOR=#2f4f4f][hr][size=17][b]Support case from /n %username% [COLOR=#aa0000]",
+     "channeldescription": "[center][COLOR=#2f4f4f][hr][size=17][b]Support case from \n %username% [COLOR=#aa0000]",
      "userpoke": "[B][color=#27b7ca][SUPPORT-System][/color][/B] Please be patient for a moment!",
      "supporterpoke": "%username% is in the [color=#a9102f]support-area[/color]!"
   },
